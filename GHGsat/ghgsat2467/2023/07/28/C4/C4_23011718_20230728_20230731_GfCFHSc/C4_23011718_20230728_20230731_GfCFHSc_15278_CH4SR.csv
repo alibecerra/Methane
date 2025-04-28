@@ -1,0 +1,2 @@
+Observation ID,Acquisition time [UTC],Latitude,Longitude,Northing (UTM),Easting (UTM),UTM epsg,Q-IME [kg/hr],Q-IME Error [%],Wind speed [m/s],Wind speed source
+GfCFHSc,2023-07-28 21:14:46.279000,36.37534757,-114.85907416,4027709.0,692051.0,32611,681.0,41.0,4.9,GEOS-FP
