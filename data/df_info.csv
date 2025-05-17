@@ -1,0 +1,34 @@
+Name,Data Type,Description,Access
+uuid,UUID, unique primary key,"Universally unique object identifier randomly generated using UUIDv4",public (API only)
+plume_id,text, unique,"A unique identifier for each plume in the format {platform}{YYYYMMDD}{HHMMSS}-{part}. The first three characters represent the platform (e.g., GAO for Global Airborne Observatory), followed by the acquisition date and time in ISO 8601 UTC format. The part suffix (e.g., ""p0000-A"") retains key information from the original radiance filename and indicates the order of multiple plumes detected in the same image.",public
+plume_latitude,decimal degree,"Latitude estimate of plume origin",public
+plume_longitude,decimal degree,"Longitude estimate of plume origin",public
+datetime,UTC timestamp in ISO 8601 format,"Date and time of the acquisition in Coordinated Universal Time (UTC)",public
+ipcc_sector,text, categorial identifier,"IPCC emissions sector, if available (e.g., ""Oil & Gas (1B2)"") Reference: https://www.ipcc-nggip.iges.or.jp/public/gl/guidelin/ch1ri.pdf",public
+gas,text, categorial identifier,"The gas molecule detected during imaging operations",public
+emission_cmf_type,text, categorial identifier,"Statistical-based column-wise atmospheric retrieval algorithm used to threshold methane or carbon dioxide plumes from background concentrations",public
+plume_bounds,decimal degrees,"The geographic bounds encompassing a plume image",public
+instrument,text,"Three character abbreviations for sensor (e.g., ang (AVIRIS-NG), av3 (AVIRIS-3), emi (EMIT), tan (Tanager))",public
+mission_phase,text,"Operational mission phase, such as 'first_light' or 'production.'",public
+published_at,UTC timestamp in ISO 8601 format,"Date and time the observation was published in Coordinated Universal Time (UTC)",public
+modified,UTC timestamp in ISO 8601 format,"Date and time the observation was modified in Coordinated Universal Time (UTC)",public
+ime,float,"The total kilograms (kg) of methane in a plume above the background concentration at the time of image capture",available upon request
+emission_version,text,"Identifies the specific algorithm and calibration updates applied to the data and described in a version log",public
+processing_software,text,"Identifies the version of the processing software used to generate the data",public
+gsd,float,"The native distance on the ground represented by the center-to-center spacing of pixels in the sensor's raw radiance data, measured in meters",public
+sensitivity_mode,text,"The sensor's configured detection threshold and radiometric settings, which affect signal-to-noise ratio (SNR), exposure time, and spectral fidelity",public
+off_nadir,float,"The angle between a satellite’s sensor line of sight and the point directly below the satellite (nadir)",public
+emission_auto,numerical, kg/hr,"The quantified emission rate of a plume, estimated using the Integrated Methane Enhancement method (Duren et al., 2019 - ""California's Methane Super-Emitters"", Nature)",public
+emission_uncertainty_auto,numerical, ± kg/hr range,"The uncertainty in an emission rate, derived from uncertainty in IME and wind speed",public
+wind_speed_avg_auto,float,"Mean wind speed m/s",public
+wind_speed_std_auto,float,"Standard deviation wind speed m/s",public
+wind_direction_avg_auto,float,"Wind direction (degrees)",public
+wind_direction_std_auto,float,"Wind direction standard deviation (degrees)",public
+wind_source_auto,string,"Wind source from reanalysis (e.g., HRRR, ECMWF_IFS, ERA5)",public
+platform,text,"The unique name of the platform to which the instrument is attached",public
+provider,text,"A short description of the data provider's name",public
+plume_tif,string (URL),"An HTTPS link that provides access to a GeoTIFF of the delineated plume",public
+plume_png,string (URL),"An HTTPS link that provides access to a PNG of the delineated plume",public
+con_tif,string (URL),"An HTTPS link that provides access to a GeoTIFF pixel map of unsmoothed concentration values in parts per million-meter (ppm-m)",public
+rgb_tif,string (URL),"An HTTPS link that provides access to 3-band, natural color full-strip surface-reflectance GeoTIFF",public
+rgb_png,string (URL),"An HTTPS link that provides access to natural color full-strip surface-reflectance PNG",public

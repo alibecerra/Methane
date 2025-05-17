@@ -1,0 +1,300 @@
+{
+  "metadata_version": "2.5",
+  "sensing_platform": {
+    "platform_type": "satellite",
+    "name": "GHGSat-C7",
+    "wavelength_min": 1600,
+    "wavelength_max": 1700
+  },
+  "product_order": {
+    "product_order_id": 24016881,
+    "product_name": "satellite_monitoring",
+    "product_level": "D.1 Emission",
+    "tech_auth_email": "operations@ghgsat.com",
+    "tech_auth_url": "https://www.ghgsat.com",
+    "tech_auth_phone": "+1 438-500-6700"
+  },
+  "observation": {
+    "start_time_unix": 1709921144.502,
+    "stop_time_unix": 1709921164.502,
+    "start_time_iso8601": "2024-03-08T18:05:44.502000+00:00",
+    "stop_time_iso8601": "2024-03-08T18:06:04.502000+00:00",
+    "sun_zenith_deg": 47.99,
+    "sun_azimuth_deg": 138.154,
+    "los_zenith_deg": 6.939,
+    "los_azimuth_deg": 78.142,
+    "satellite_height_meters": 490616.35
+  },
+  "processing_groups": [
+    {
+      "levels": [
+        "L0",
+        "L1A",
+        "L1B",
+        "L2A"
+      ],
+      "processor": "GHGSat-Toolchain",
+      "processor_version": "14.1.0"
+    },
+    {
+      "levels": [
+        "L2B"
+      ],
+      "processor": "ghg.post_processing"
+    }
+  ],
+  "layers": [
+    {
+      "filename": "C7_24016881_20240308_20240311_SihBzsy_ALB.tif",
+      "name": "Surface Reflectance",
+      "file_format": "GeoTIFF",
+      "rows": 964,
+      "columns": 748,
+      "datatype": "F32",
+      "size_bytes": 1561552,
+      "sha256": "9b781463ad679c865465e7b21e5f78dae4ac0d7204ca5629fdc6e64850458bdd",
+      "unit": "sr^-1",
+      "processing_level": "L2B",
+      "gsd_x_meters": 27.673683216936208,
+      "gsd_y_meters": 27.673683216936208,
+      "transformation": [
+        [
+          27.673683216936208,
+          0.0,
+          0.0,
+          338065.1757946896
+        ],
+        [
+          0.0,
+          -27.673683216936208,
+          0.0,
+          3823909.5879234513
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "crs": {
+        "epsg": 32611,
+        "wkt": "PROJCS[\"WGS 84 / UTM zone 11N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-117],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32611\"]]"
+      },
+      "bounding_box": {
+        "lat_min": 34.30672413,
+        "lat_max": 34.5441704,
+        "lon_min": -118.76476446,
+        "lon_max": -118.53485115
+      },
+      "min": 0.00611609,
+      "max": 0.65182918,
+      "mean": 0.21145496
+    },
+    {
+      "filename": "C7_24016881_20240308_20240311_SihBzsy_CH4.tif",
+      "name": "Abundance Dataset",
+      "file_format": "GeoTIFF",
+      "rows": 964,
+      "columns": 748,
+      "datatype": "F32",
+      "size_bytes": 2888516,
+      "sha256": "6c3cf37f28780653b256f394671caaa231f628bf6777e4572f8db08ad9b92e9f",
+      "unit": "ppb",
+      "processing_level": "L2B",
+      "gsd_x_meters": 27.673683216936208,
+      "gsd_y_meters": 27.673683216936208,
+      "transformation": [
+        [
+          27.673683216936208,
+          0.0,
+          0.0,
+          338065.1757946896
+        ],
+        [
+          0.0,
+          -27.673683216936208,
+          0.0,
+          3823909.5879234513
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "crs": {
+        "epsg": 32611,
+        "wkt": "PROJCS[\"WGS 84 / UTM zone 11N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-117],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32611\"]]"
+      },
+      "bounding_box": {
+        "lat_min": 34.30672413,
+        "lat_max": 34.5441704,
+        "lon_min": -118.76476446,
+        "lon_max": -118.53485115
+      },
+      "min": -11612.66113281,
+      "max": 12848.81152344,
+      "mean": -16.21511841,
+      "mean_background": 1900.035721134566
+    },
+    {
+      "filename": "C7_24016881_20240308_20240311_SihBzsy_CH4ER.tif",
+      "name": "Abundance Dataset - Uncertainty",
+      "file_format": "GeoTIFF",
+      "rows": 964,
+      "columns": 748,
+      "datatype": "F32",
+      "size_bytes": 1206800,
+      "sha256": "281bf9dc5ec42198d3d04f27f355f775d8e4b3355707101d5c834779064c2437",
+      "unit": "ppb",
+      "processing_level": "L2B",
+      "gsd_x_meters": 27.673683216936208,
+      "gsd_y_meters": 27.673683216936208,
+      "transformation": [
+        [
+          27.673683216936208,
+          0.0,
+          0.0,
+          338065.1757946896
+        ],
+        [
+          0.0,
+          -27.673683216936208,
+          0.0,
+          3823909.5879234513
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "crs": {
+        "epsg": 32611,
+        "wkt": "PROJCS[\"WGS 84 / UTM zone 11N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-117],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32611\"]]"
+      },
+      "bounding_box": {
+        "lat_min": 34.30672413,
+        "lat_max": 34.5441704,
+        "lon_min": -118.76476446,
+        "lon_max": -118.53485115
+      },
+      "min": -12003.66308594,
+      "max": 180266.203125,
+      "mean": 127.39526367
+    },
+    {
+      "filename": "C7_24016881_20240308_20240311_SihBzsy_FLG.tif",
+      "name": "Quality Flags",
+      "file_format": "GeoTIFF",
+      "rows": 964,
+      "columns": 748,
+      "datatype": "U8",
+      "size_bytes": 34184,
+      "sha256": "5b5efa384b58cb3ca88dd26692cc4a35b3d8b5603d91fe40e3ed257a2aa4db91",
+      "unit": "",
+      "processing_level": "L2B",
+      "gsd_x_meters": 27.673683216936208,
+      "gsd_y_meters": 27.673683216936208,
+      "transformation": [
+        [
+          27.673683216936208,
+          0.0,
+          0.0,
+          338065.1757946896
+        ],
+        [
+          0.0,
+          -27.673683216936208,
+          0.0,
+          3823909.5879234513
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "crs": {
+        "epsg": 32611,
+        "wkt": "PROJCS[\"WGS 84 / UTM zone 11N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-117],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32611\"]]"
+      },
+      "bounding_box": {
+        "lat_min": 34.30672413,
+        "lat_max": 34.5441704,
+        "lon_min": -118.76476446,
+        "lon_max": -118.53485115
+      },
+      "min": 1.0,
+      "max": 3.0,
+      "mean": 1.83761508,
+      "interpretation": {
+        "1": "Good",
+        "2": "NoData",
+        "3": "BadFit"
+      }
+    }
+  ],
+  "files": [
+    {
+      "filename": "C7_24016881_20240308_20240311_SihBzsy_BRW.png",
+      "name": "Browse Image",
+      "file_format": "PNG with ESRI World File",
+      "processing_level": "L2B",
+      "size_bytes": 33303,
+      "sha256": "7993ad141b644083bb07f1f3d471ff83386ed5e9a23ef9c33687cb7285ca6683",
+      "auxiliary_filenames": [
+        "C7_24016881_20240308_20240311_SihBzsy_BRW.wld"
+      ]
+    },
+    {
+      "filename": "C7_24016881_20240308_20240311_SihBzsy_CH4CM.png",
+      "name": "Concentration Map (overview)",
+      "file_format": "PNG",
+      "processing_level": "L2B",
+      "size_bytes": 10591674,
+      "sha256": "779dd07ebaa520d7b10dd6203703e8b79eb6984ea9cfc4f808e12512111aa009"
+    }
+  ],
+  "conversion_factors": {
+    "molm2_to_ppb": 2895.588734,
+    "ppb_to_molm2": 0.0003453529
+  },
+  "license": {
+    "originator": "GHGSat",
+    "originator_url": "https://www.ghgsat.com",
+    "filename": "GHG-2000-2003-f_EULA_2024.pdf",
+    "language": "en",
+    "size_bytes": 127062,
+    "version": "GHG-2000-2003-f",
+    "sha256": "0421af2ce603a6321b6668e94df06c894b8e85f9bf7d3cf32c3b7f94a76ab049"
+  }
+}
