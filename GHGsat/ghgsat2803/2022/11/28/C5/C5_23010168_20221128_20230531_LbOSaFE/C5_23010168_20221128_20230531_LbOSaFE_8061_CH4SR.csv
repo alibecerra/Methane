@@ -1,0 +1,2 @@
+Observation ID,Acquisition time [UTC],Latitude,Longitude,Northing (UTM),Easting (UTM),UTM epsg,Q-IME [kg/hr],Q-IME Error [%],Wind speed [m/s],Wind speed source
+LbOSaFE,2022-11-28 19:53:24.500000,29.8308485,-95.23511974,3302138.0,284035.0,32615,1561.0,52.0,1.7,GEOS-FP
