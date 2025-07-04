@@ -1,0 +1,2 @@
+Observation ID,Acquisition time [UTC],Latitude,Longitude,Northing (UTM),Easting (UTM),UTM epsg,Q-IME [kg/hr],Q-IME Error [%],Wind speed [m/s],Wind speed source
+-SlG5JX,2021-03-23 06:29:21.500000,38.51618149,54.18846641,4266835.0,254872.0,32640,287.0,38.0,4.4,GEOS-FP

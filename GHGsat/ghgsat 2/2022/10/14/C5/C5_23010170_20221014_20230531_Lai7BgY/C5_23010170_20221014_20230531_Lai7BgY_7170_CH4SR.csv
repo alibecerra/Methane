@@ -1,0 +1,2 @@
+Observation ID,Acquisition time [UTC],Latitude,Longitude,Northing (UTM),Easting (UTM),UTM epsg,Q-IME [kg/hr],Q-IME Error [%],Wind speed [m/s],Wind speed source
+Lai7BgY,2022-10-14 18:42:27.500000,35.67417775,-78.85013216,3949940.0,694571.0,32617,646.0,63.0,1.0,GEOS-FP

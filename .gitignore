@@ -1,0 +1,11 @@
+# Ignore PDF files
+*.pdf
+
+# Ignore TIFF files
+*.tif
+*.tiff
+
+# Ignore JSON files
+*.json
+
+*.zip
