@@ -1,2 +1,0 @@
-Observation ID,Acquisition time [UTC],Latitude,Longitude,Northing (UTM),Easting (UTM),UTM epsg,Q-IME [kg/hr],Q-IME Error [%],Wind speed [m/s],Wind speed source
-Wil9BgY,2024-03-12 15:20:16.919000,35.67549148,-78.84533702,3950095,695001,32617,448.0,70.0,0.6,GEOS-FP
